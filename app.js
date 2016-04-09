@@ -1,5 +1,5 @@
 var firstQuestion = "What is your name?";
-var secondQuestion = "What is your quest?";
+var secondQuestion = "What is your quest? Fight the Black Knight or seek the grail?";
 var thirdQuestion = "What is the airspeed velocity of an unladen swallow?";
 var fourthQuestion = "What is the answer to the ultimate question?";
 
@@ -12,11 +12,11 @@ if (firstAnswer.toLowerCase() === "arthur") { //checking answer converted to low
 }
 
 var secondAnswer = prompt(secondQuestion); //second question asked of the user.
-console.log("User's second answer: " + secondAnswer); //storing second answer given.
-if (secondAnswer === "I seek the grail.") {
-  alert("A dangerous undertaking, " + secondAnswer + ".  Many deadly ferrets and rabbits lie ahead as you " + secondAnswer);
+console.log("User's second answer: " + secondAnswer.toLowerCase()); //storing second answer given and conveting to all lowercase.
+if (secondAnswer === "seek the grail") { //checking second answer converted to lowercase to "i seek the grail."
+  alert("A dangerous undertaking, " + secondAnswer + ".  Many deadly ferrets and rabbits lie ahead as you " + secondAnswer + "."); //providing positive feedback to the user.
 } else {
-  alert("Look, if you don't know what you're doing, galavanting around doing " + secondAnswer + ", then you're just asking for a fuzzy death.")
+  alert("Look, if you don't know what you're doing, galavanting around doing " + secondAnswer + ", then you're just asking for a fuzzy death.") //providing negative feedback.
 }
 
 var thirdAnswer = prompt(thirdQuestion); //third question asked of the user.
