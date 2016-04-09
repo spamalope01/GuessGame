@@ -1,3 +1,48 @@
+// var firstAnswer;
+// var secondAnswer;
+// var thirdAnswer;
+// var fourthAnswer;
+var firstQuestion = "What is your name?";
+var secondQuestion = "What is your quest?";
+var thirdQuestion = "What is the airspeed velocity of an unladen swallow?";
+var fourthQuestion = "What is the answer to the ultimate question?"
+
+var firstAnswer = prompt(firstQuestion); //first question asked of user.
+console.log("User's first answer: " + firstAnswer); //storing first answer given.
+if (firstAnswer === "Arthur") {
+  alert("Good to know you, sir!  Answer the next questions correctly and ye may not die a horrible, fuzzy death.");
+} else {
+  alert("So sorry, we're looking for Arthur, not " + firstAnswer + ". Into the pit you go.");
+}
+
+var secondAnswer = prompt(secondQuestion); //second question asked of the user.
+console.log("User's second answer: " + secondAnswer); //storing second answer given.
+if (secondAnswer === "I seek the grail.") {
+  alert("A dangerous undertaking, " + secondAnswer + ".  Many deadly ferrets and rabbits lie ahead as you " + secondAnswer);
+} else {
+  alert("Look, if you don't know what you're doing, galavanting around doing " + secondAnswer + ", then you're just asking for a fuzzy death.")
+}
+
+var thirdAnswer = prompt(thirdQuestion); //third question asked of the user.
+console.log("User's third answer: " + thirdAnswer); //storing the third answer given.
+if (thirdAnswer === "African or European?") {
+  alert("You're amazing! I just saw a grail shaped beacon at the castle Anthrax! Wow! " + thirdAnswer + " No wonder you're king!")
+} else {
+  alert("It's a miracle you haven't been eaten by a badger yet, saying things like " + thirdAnswer + ".")
+}
+
+var fourthAnswer = prompt(fourthQuestion); //fourth question asked of the user.
+console.log("User's fourth answer: " + fourthAnswer); //storing the fourth answer given.
+if (fourthAnswer < 42) {
+  alert(fourthAnswer + " is too low. Sorry.")
+} else if (fourthAnswer > 42) {
+  alert (fourthAnswer + " is too high. Sorry.")
+} else {
+  alert(fourthAnswer + " is absolutely correct.  Here's your towel.")
+}
+// alert("Good to meet you " + userName + "." + " Nice to see you've given up the ferret fights.  Nasty work, those.  I once heard someone brought a rabid orangutan to such an event. Damned thing took nine ferrets to bring it down.");
+
+
 // var userName = prompt("Tell me your name.");
 // var message;
 // if (userName = "Scott") {
