@@ -2,32 +2,47 @@ var firstQuestion = "What is your name?";
 var secondQuestion = "What is your quest? Fight the Black Knight or seek the grail?";
 var thirdQuestion = "What is the airspeed velocity of an unladen swallow?";
 var fourthQuestion = "What is the answer to the ultimate question?";
+var rightAnswer = 0;
+var wrongAnswer = 0;
 
 var firstAnswer = prompt(firstQuestion); //first question asked of user.
 console.log("User's first answer: " + firstAnswer.toLowerCase()); //storing first answer given and converting it to all lowercase.
 if (firstAnswer.toLowerCase() === "arthur") { //checking answer converted to lowercase to 'arthur'.
   alert("Good to know you, sir!  Answer the next questions correctly and ye may not die a horrible, fuzzy death."); //providing positive feedback to the user.
+  rightAnswer++;
+  console.log("The current number of right answers: " + rightAnswer);
 } else {
   alert("So sorry, we're looking for Arthur, not " + firstAnswer + ". Into the pit you go."); //telling the user they're a loser.
+  wrongAnswer++;
+  console.log("The current number of wrong answers: " + wrongAnswer);
 }
 
 var secondAnswer = prompt(secondQuestion); //second question asked of the user.
 console.log("User's second answer: " + secondAnswer.toLowerCase()); //storing second answer given and conveting to all lowercase.
 if (secondAnswer === "seek the grail") { //checking second answer converted to lowercase to "i seek the grail."
   alert("A dangerous undertaking, " + secondAnswer + ".  Many deadly ferrets and rabbits lie ahead as you " + secondAnswer + "."); //providing positive feedback to the user.
+  rightAnswer++;
+  console.log("The current number of right answers: " + rightAnswer);
 } else {
   alert("Look, if you don't know what you're doing, galavanting around doing " + secondAnswer + ", then you're just asking for a fuzzy death.") //providing negative feedback.
+  wrongAnswer++;
+  console.log("The current number of wrong answers: " + wrongAnswer);
 }
 
 var thirdAnswer = prompt(thirdQuestion); //third question asked of the user.
-console.log("User's third answer: " + thirdAnswer); //storing the third answer given.
-if (thirdAnswer === "African or European?") {
-  alert("You're amazing! I just saw a grail shaped beacon at the castle Anthrax! Wow! " + thirdAnswer + " No wonder you're king!")
+console.log("User's third answer: " + thirdAnswer.toLowerCase()); //storing the third answer given and converting to lowercase.
+if (thirdAnswer === "african or eropean") { //validating third answer given against 'african or european'
+  alert("You're amazing! I just saw a grail shaped beacon at the castle Anthrax! Wow! " + thirdAnswer + " No wonder you're king!") //positive feedback to the User
+  rightAnswer++;
+  console.log("The current number of right answers: " + rightAnswer);
 } else {
-  alert("It's a miracle you haven't been eaten by a badger yet, saying things like " + thirdAnswer + ".")
+  alert("It's a miracle you haven't been eaten by a badger yet, saying things like " + thirdAnswer + ".") //negative feedback to user
+  wrongAnswer++;
+  console.log("The current number of wrong answers: " + wrongAnswer);
+
 }
 
-var fourthAnswer = prompt(fourthQuestion); //fourth question asked of the user.
+var fourthAnswer = parseInt (prompt(fourthQuestion)); //fourth question asked of the user.
 console.log("User's fourth answer: " + fourthAnswer); //storing the fourth answer given.
 if (fourthAnswer < 42) {
   alert(fourthAnswer + " is too low. Sorry.")
