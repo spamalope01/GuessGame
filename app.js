@@ -1,18 +1,14 @@
-// var firstAnswer;
-// var secondAnswer;
-// var thirdAnswer;
-// var fourthAnswer;
 var firstQuestion = "What is your name?";
 var secondQuestion = "What is your quest?";
 var thirdQuestion = "What is the airspeed velocity of an unladen swallow?";
-var fourthQuestion = "What is the answer to the ultimate question?"
+var fourthQuestion = "What is the answer to the ultimate question?";
 
 var firstAnswer = prompt(firstQuestion); //first question asked of user.
-console.log("User's first answer: " + firstAnswer); //storing first answer given.
-if (firstAnswer === "Arthur") {
-  alert("Good to know you, sir!  Answer the next questions correctly and ye may not die a horrible, fuzzy death.");
+console.log("User's first answer: " + firstAnswer.toLowerCase()); //storing first answer given and converting it to all lowercase.
+if (firstAnswer.toLowerCase() === "arthur") { //checking answer converted to lowercase to 'arthur'.
+  alert("Good to know you, sir!  Answer the next questions correctly and ye may not die a horrible, fuzzy death."); //providing positive feedback to the user.
 } else {
-  alert("So sorry, we're looking for Arthur, not " + firstAnswer + ". Into the pit you go.");
+  alert("So sorry, we're looking for Arthur, not " + firstAnswer + ". Into the pit you go."); //telling the user they're a loser.
 }
 
 var secondAnswer = prompt(secondQuestion); //second question asked of the user.
@@ -57,35 +53,35 @@ if (fourthAnswer < 42) {
 // }
 
 
-var arr = [1, 3, "Blue", true, "Dog"];
-// for (var i = arr.length - 1; i >= 0; i--) { // for(start, stop, step)
-//   console.log(arr[i] +": " + typeof arr[i]);
-//   // if (typeof arr[i] === 'string') {
-//   //   console.log(arr[i]);
-//   // }
-// }
-
+// var arr = [1, 3, "Blue", true, "Dog"];
+// // for (var i = arr.length - 1; i >= 0; i--) { // for(start, stop, step)
+// //   console.log(arr[i] +": " + typeof arr[i]);
+// //   // if (typeof arr[i] === 'string') {
+// //   //   console.log(arr[i]);
+// //   // }
+// // }
+//
+// // var userNum = parseInt (prompt("guess my number"));
+// // while (userNum !== 10) {
+// //   console.log(userNum);
+// //   userNum = parseInt (prompt ("Guess again."));
+// // }
+//
+// var counter = 1;
 // var userNum = parseInt (prompt("guess my number"));
-// while (userNum !== 10) {
-//   console.log(userNum);
-//   userNum = parseInt (prompt ("Guess again."));
+// while(counter < 4) {
+// if (userNum === 10){
+//   alert ("you nailed it)");
+//   break;
+// } else if (userNum > 10) {
+//   alert ("your number was too high.");
+//   counter++;
+//   console.log("the counter is at: " + counter);
+//   userNum = parseInt (prompt("guess lower."));
+// } else if (userNum < 10) {
+//   alert ("your number was too low.");
+//   counter++;
+//   console.log("the counter is at: " + counter);
+//   userNum = parseInt (prompt("guess higher."));
 // }
-
-var counter = 1;
-var userNum = parseInt (prompt("guess my number"));
-while(counter < 4) {
-if (userNum === 10){
-  alert ("you nailed it)");
-  break;
-} else if (userNum > 10) {
-  alert ("your number was too high.");
-  counter++;
-  console.log("the counter is at: " + counter);
-  userNum = parseInt (prompt("guess lower."));
-} else if (userNum < 10) {
-  alert ("your number was too low.");
-  counter++;
-  console.log("the counter is at: " + counter);
-  userNum = parseInt (prompt("guess higher."));
-}
-}
+// }
