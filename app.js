@@ -64,7 +64,13 @@ if (rightAnswer > wrongAnswer) {
   alert("You really should wear a helmet lest you damage what is left of your head.  You have given " + wrongAnswer + " wrong answers. You're probably better suited for chopping down trees with a herring.");
 }
 
-
+var guessNum = parseInt(prompt("I'm thinking of a number between 1 and 5.  Can you guess it?"));
+while (guessNum !== 4) {
+  console.log("User's guess is: " + guessNum);
+  guessNum = parseInt (prompt ("Nope! Guess again."));
+} if (guessNum === 4){
+  alert("You got it!");
+}
 
 
 // alert("Good to meet you " + userName + "." + " Nice to see you've given up the ferret fights.  Nasty work, those.  I once heard someone brought a rabid orangutan to such an event. Damned thing took nine ferrets to bring it down.");
