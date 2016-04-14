@@ -3,7 +3,7 @@
 // var pElThree = "";
 
 // var eleThings = [
-  var pElOne = document.getElementById('answerOne');
+  /*var pElOne = document.getElementById('answerOne');
   var pElTwo = document.getElementById('answerTwo');
   var pElThree = document.getElementById('answerThree');
 // ];
@@ -39,4 +39,49 @@ function game(questions, answers, element) {
  game(questions, answers, els);
  pElOne.textContent = "Your Name Is: " + els[0];
  pElTwo.textContent = "Your Quest Is: " + els[1];
- pElThree.textContent = "The Airspeed Velocity of An Unladen Swallow Is: " + els[2];
+ pElThree.textContent = "The Airspeed Velocity of An Unladen Swallow Is: " + els[2];*/
+var pElOne = document.getElementById("answerOne");
+var pElTwo = document.getElementById("answerTwo");
+var pElThree = document.getElementById("answerThree");
+
+var els = [
+  pElOne,
+  pElTwo,
+  pElThree,
+];
+
+var questions = [
+  "What is your name?",
+  "What is your quest? Fight the Black Knight or seek the grail?",
+  "What is the airspeed velocity of an unladen swallow?",
+];
+var answers = [
+  "aurthur",
+  "seek the grail",
+  "african european",
+];
+
+var guess="";
+function game(question, answer, element){
+
+    guess = prompt(questions[i]);
+    //els[i] = guess;
+    if(guess === answers[i]){
+      element.textContent = "Your correct answer is: " + guess;
+      // pElTwo.textContent = "Your Quest is: " + els[1];
+      // pElThree.textContent = "The Airspeed Velocity of an Unladen Swallow is: " + els[2];
+
+      console.log("right");
+    } else {
+      element.textContent = "Your wrong answer is: " + guess;
+      // pElTwo.textContent = "Your answer: "+ els[1] + " was wrong";
+      // pElThree.textContent = "Your answer: "+ els[2] + " was wrong";
+      console.log("wrong");
+    }
+
+
+
+}
+for(var i=0, l = questions.length; i < l; i++){
+game(questions[i], answers[i], els[i]);
+}
