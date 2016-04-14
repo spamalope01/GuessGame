@@ -42,7 +42,7 @@ if (thirdAnswer === "african or eropean") { //validating third answer given agai
 
 }
 
-var fourthAnswer = parseInt (prompt(fourthQuestion)); //fourth question asked of the user, converting the string entered to an integer.
+var fourthAnswer = parseInt(prompt(fourthQuestion)); //fourth question asked of the user, converting the string entered to an integer.
 console.log("User's fourth answer: " + fourthAnswer); //storing the fourth answer given.
 if (fourthAnswer < 42) {
   alert(fourthAnswer + " is too low. Sorry.")
@@ -67,11 +67,109 @@ if (rightAnswer > wrongAnswer) {
 var guessNum = parseInt(prompt("I'm thinking of a number between 1 and 5.  Can you guess it?"));
 while (guessNum !== 4) {
   console.log("User's guess is: " + guessNum);
-  guessNum = parseInt (prompt ("Nope! Guess again."));
+  guessNum = parseInt(prompt ("Nope! Guess again."));
 } if (guessNum === 4){
   alert("You got it!");
 }
+//
+//
+// // oldschool way of creating an array
+// var arr = new Array(); //arr => [];
+// var arr = new Array(4); //arr => [item, item, item, item];
+//
+//
+// //this is normal for creating an array;
+// var arr = []; //arr => [];
+// var arr =[1, 4, 'Blue', true, 'False']; //arr =[1, 4, 'Blue', true, 'False'];
+// var arr = [[1, 4,], ['Blue', true, ['False']]]; // to get 'false', it's arr[1][2][0] because 'false is an element within the 2nd array.
+//
+// function indexOf() {}//allows us to scan an array to find a certian value.  so the code is....
+// arr.indexOf(value);
+//
+// //basic function declaration;
+// function foo() {
+//
+// }
+//
+// //  basic function expression
+// var foo = function() {
+//
+// }
+//
+// function getName(name, age, favs) {
+//   return name;
+// }
+// getName('Scott', 33, ['books', 'movies']);
+//
+// function getAge(age){
+//   return age;
+// }
+//
+// function getFavs(){
+//   return favs;
+// }
+//
+// console.log(getName ('Scott'), getAge(33), getFavs(['books', 'movies']));
+//
+//
+//
+//
+// //IIFE's
+// //these run immediately on page load.
+//
+// (function foo() {
+//   console.log('bar');
+// })();
+//
+// var x = 5;
 
+
+
+
+  //   for(var i =0; l=questions.length; i < l; i++){
+  //     alert("that's right");
+  //     rightAnswer++; //adding one to the current number of right answers.
+  //     console.log("The current number of right answers: " + rightAnswer); //writing the total number of right answers to the console.
+  //   } else {
+  //     alert("It's a miracle you haven't been eaten by a badger yet, saying things like " + thirdAnswer + ".") //negative feedback to user
+  //     wrongAnswer++; //adding one to the current total of wrong answers.
+  //     console.log("The current number of wrong answers: " + wrongAnswer);
+  //   }
+  // } else {
+    //do some other stuff;
+    //target element and update textContent;
+//   }
+// }
+
+// game(quetions[0], answers[0]);
+// a for loop would DRY this out very well.
+
+//plug data in and run the code.  but use the for loop to iterate through it.  however, there's that last odball question happening wherein there's a 'while' loop being used.  try to get that all inside the above function but if we absolutely can't, then we can write a separate function.
+// so, something....create a counter variable.  then, for (var i = 0; i<3; i++) {
+
+//DOM Manipulation
+ // pEl = <p> el = element
+//  var pEl = document.getElementById('results'); //this goes with the p tag on index2
+//
+//  pEl.id //gives the value of the variable pEl.
+//  pEl.id = 'someNewVal' //you can set or write a new value to something.
+//
+//  pEl.textContent = 'this is some content.' //displays the content of the element.
+//
+// var pEl = document.createElement('p');
+// var sectionEl = document.getElementById('results'); //targeted an element that's on the page.
+// sectionEl.appendChild(pEl)
+//
+//
+// //hardcode an element and give the element an id (for our answers)
+//
+// var pElOne = gocument.getElementsByID('answerOne'); //then do the same for the others.
+// var els = [pElOne, pElTwo, pElThree];
+//
+//
+// function game(question, answer, element)
+//
+//
 
 // alert("Good to meet you " + userName + "." + " Nice to see you've given up the ferret fights.  Nasty work, those.  I once heard someone brought a rabid orangutan to such an event. Damned thing took nine ferrets to bring it down.");
 
