@@ -76,6 +76,7 @@ function game(question, answer, element){
         if(isNaN(guess)){
             if(guess === answers[i]){
               element.textContent = "Your correct answer is: " + guess;
+
               // pElTwo.textContent = "Your Quest is: " + els[1];
               // pElThree.textContent = "The Airspeed Velocity of an Unladen Swallow is: " + els[2];
               console.log("right");
@@ -87,7 +88,9 @@ function game(question, answer, element){
             }
           } else {
             if(guess === answers[i]){
-            element.textContent = "Your guess is right. Here is your towel."
+            element.textContent = "Your guess is right. Here is your towel.";
+          } else {
+            element.textContent = "Sorry that number is wrong." + guess;
           }
             }
 }
