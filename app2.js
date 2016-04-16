@@ -3,6 +3,7 @@
 // var pElThree = "";
 
 // var eleThings = [
+// i could wrap all the below in a single variable 'var els' naturally it'd be an array.
   var pElOne = document.getElementById('answerOne');
   var pElTwo = document.getElementById('answerTwo');
   var pElThree = document.getElementById('answerThree');
