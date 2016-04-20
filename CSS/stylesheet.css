@@ -1,19 +1,32 @@
-/*@import url(https://fonts.googleapis.com/css?family=Arimo|Droid+Serif);*/
-
 body {
   background-color: #A5CFF8;
   font-family: Arimo, sans-serif;
 }
+
+#mainNav {
+  padding-left: 4px;
+}
+
+#titleOfSite {
+  color: #FF530D;
+  text-decoration: underline;
+}
+
 .navBar{
+  display: inline-block;
+  padding: 15px;
   text-decoration: none;
   font-family: cursive;
 }
+
 a:hover {
   color: #FF530D;
 }
+
 .response{
   font-size: 35px;
 }
+
 #info{
   font-size: 50px;
   color: #FAD187;
