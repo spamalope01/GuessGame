@@ -12,3 +12,4 @@ Jonathan Daniel Class 3 lab adding in error correction. Used MDN heavily for thi
 - Created a CSS page
 - Did some styling
 - Added a guess the number to the js file
+N6 updates to guessing game
