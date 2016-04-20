@@ -30,7 +30,7 @@ function game(question, answer, element){
     }
         if(isNaN(guess)){
             if(guess === answers[i]){
-              element.textContent = "Your correct answer is: " + guess;
+              element.innerHTML = "Your correct answer is: " + guess;
             } else {
               element.textContent = "Your wrong answer is: " + guess;
             }
