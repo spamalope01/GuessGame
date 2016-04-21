@@ -14,14 +14,22 @@ var questions = [
   "Where am I from?",
 ];
 var answers = [
-  "aurthur",
+  "arthur",
   "seek the grail",
   "african or european",
   42,
   "Alabama",
 ];
 
-var guess="";
+var ele = document.getElementById('text');
+
+// if (you guess the right answer) {
+//   ele.className = 'correct';
+// } else {
+//   ele.className = 'incorrect');
+// }
+
+var guess= document.getElementById(els[i]);
 function game(question, answer, element){
     guess = prompt(questions[i].toLowerCase());
     //els[i] = guess;
@@ -30,15 +38,23 @@ function game(question, answer, element){
     }
         if(isNaN(guess)){
             if(guess === answers[i]){
-              element.innerHTML = "Your correct answer is: " + guess;
+              els[i].innerHTML += '<img src= "Images/excited.png"/>';
+              element.textContent = "You got that right, answering " + guess + "! You must be a wizard!";
+              els[i].className = 'correct';
             } else {
-              element.textContent = "Your wrong answer is: " + guess;
+              els[i].innerHTML += '<img src= "Images/dawson_crying.jpg"/>';
+              element.textContent = guess + "? Wrong.  It's a miracle you haven't been eaten by a badger yet.";
+              els[i].className = 'incorrect';
             }
           } else {
             if(guess === answers[i]){
+            els[i].innerHTML += '<img src= "images/excited.png"/>';
             element.textContent = "Your guess is right. Here is your towel.";
+            els[i].className = 'correct';
           } else {
+            els[i].innerHTML += '<img src= "images/dawson_crying.jpg"/>';
             element.textContent = "Sorry that number is wrong." + guess;
+            els[i].className = 'incorrect';
           }
             }
 }

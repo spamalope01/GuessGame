@@ -23,14 +23,11 @@ a:hover {
   color: #FF530D;
 }
 
-.soWrong {
-  color: red;
-  font-size: 18px;
-}
-
-.totesRight {
+.correct {
   color: green;
-  font-size: 18px;
+}
+.incorrect {
+  color: red;
 }
 
 .response{
