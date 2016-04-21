@@ -22,7 +22,7 @@ var answers = [
 ];
 
 var ele = document.getElementById('text');
-var guess= document.getElementById(els[i]);
+var guess = document.getElementById(els[i]);
 function game(question, answer, element){
     guess = prompt(questions[i].toLowerCase());
     if(isNaN(parseInt(guess)) === false){
@@ -51,6 +51,6 @@ function game(question, answer, element){
             }
 }
 
-for(var i=0, l = questions.length; i < l; i++){
+for(var i = 0, l = questions.length; i < l; i++){
 game(questions[i], answers[i], els[i]);
 }
