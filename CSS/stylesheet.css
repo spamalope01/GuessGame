@@ -23,6 +23,17 @@ a:hover {
   color: #FF530D;
 }
 
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+
+#allAnswers{
+  width: 40%;
+}
+
 .response{
   font-size: 35px;
 }

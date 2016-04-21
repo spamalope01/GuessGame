@@ -12,3 +12,5 @@ Jonathan Daniel Class 3 lab adding in error correction. Used MDN heavily for thi
 - Created a CSS page
 - Did some styling
 - Added a guess the number to the js file
+N6 updates to guessing game
+#4.20.16 completed the evening's assignment.  added images to the game, added color to the answer feedback. cleaned up HTML and JS syntax.
