@@ -38,23 +38,23 @@ function game(question, answer, element){
     }
         if(isNaN(guess)){
             if(guess === answers[i]){
-              els[i].innerHTML += '<img src= "Images/excited.png"/>';
               element.textContent = "You got that right, answering " + guess + "! You must be a wizard!";
               els[i].className = 'correct';
+              els[i].innerHTML += '<img src= "Images/excited.png"/>';
             } else {
-              els[i].innerHTML += '<img src= "Images/dawson_crying.jpg"/>';
               element.textContent = guess + "? Wrong.  It's a miracle you haven't been eaten by a badger yet.";
               els[i].className = 'incorrect';
+              els[i].innerHTML += '<img src= "Images/dawson_crying.jpg"/>';
             }
           } else {
             if(guess === answers[i]){
-            els[i].innerHTML += '<img src= "images/excited.png"/>';
             element.textContent = "Your guess is right. Here is your towel.";
             els[i].className = 'correct';
+            els[i].innerHTML += '<img src= "Images/excited.png"/>';
           } else {
-            els[i].innerHTML += '<img src= "images/dawson_crying.jpg"/>';
             element.textContent = "Sorry that number is wrong." + guess;
             els[i].className = 'incorrect';
+            els[i].innerHTML += '<img src= "Images/dawson_crying.jpg"/>';
           }
             }
 }

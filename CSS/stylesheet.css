@@ -22,12 +22,19 @@ body {
 a:hover {
   color: #FF530D;
 }
+/*img {
+  display: inline;
+}*/
 
 .correct {
   color: green;
 }
 .incorrect {
   color: red;
+}
+
+#allAnswers{
+  width: 40%;
 }
 
 .response{
