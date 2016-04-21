@@ -22,17 +22,9 @@ var answers = [
 ];
 
 var ele = document.getElementById('text');
-
-// if (you guess the right answer) {
-//   ele.className = 'correct';
-// } else {
-//   ele.className = 'incorrect');
-// }
-
 var guess= document.getElementById(els[i]);
 function game(question, answer, element){
     guess = prompt(questions[i].toLowerCase());
-    //els[i] = guess;
     if(isNaN(parseInt(guess)) === false){
       guess = parseInt(guess);
     }
