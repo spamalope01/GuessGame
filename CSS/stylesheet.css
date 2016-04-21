@@ -23,6 +23,16 @@ a:hover {
   color: #FF530D;
 }
 
+.soWrong {
+  color: red;
+  font-size: 18px;
+}
+
+.totesRight {
+  color: green;
+  font-size: 18px;
+}
+
 .response{
   font-size: 35px;
 }
